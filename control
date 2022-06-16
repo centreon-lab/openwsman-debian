@@ -1,0 +1,27 @@
+Source: openwsman
+Section: net
+Priority: optional
+Maintainer: Luiz Costa <me@luizgustavo.pro.br>
+Build-Depends:  debhelper-compat (=12),
+                gcc,
+                g++,
+                cmake,
+                swig,
+                pkg-config,
+                libssl-dev,
+                libpam-dev,
+                libxml2-dev,
+                python-is-python3,
+                libsblim-sfcc
+Standards-Version: 4.5.0
+Homepage: https://wwww.centreon.com
+
+Package: libwsman1
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, libsblim-sfcc
+Description: Openwsman library for packages dependent on openwsman.
+
+Package: openwsman-perl
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This package provides Perl bindings to access the openwsman client API.
