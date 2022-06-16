@@ -23,5 +23,5 @@ Description: Openwsman library for packages dependent on openwsman.
 
 Package: openwsman-perl
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libwsman1
 Description: This package provides Perl bindings to access the openwsman client API.
